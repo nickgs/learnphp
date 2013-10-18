@@ -1,10 +1,10 @@
-<!--doctype html-->
 <?php
 /**
  * PHP is widely used to embed on HTML documents.
  * Lets look at some of the basics surrounding embedding PHP on a website.
  */
 ?>
+<!--doctype html-->
 <html>
 <head>
   <title>Example of embedding PHP in a HTML document.</html>
