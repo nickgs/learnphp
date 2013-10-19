@@ -6,9 +6,10 @@
  *
  */
 
-$name = "Mike Smith";
-$age = 25;
-$price = 15.95;
+$name = "Mike Smith"; //string
+$age = 25;  //integer
+$price = 15.95; //float
+$isPhpProgrammer = true; //boolean
 
 echo "Name: $name \n";
 echo "Age: $age \n";
