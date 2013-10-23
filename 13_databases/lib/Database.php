@@ -4,24 +4,27 @@
  */
 class Database {
   
-  public $connection;
-  
-  
+  private $connection;
+  public $data;
+ 
   function __construct($database, $user, $pass, $host){
     try {
       $this->connection = new PDO("mysql:host=localhost;dbname=$database", $user, $pass);
+      $data = array();
     }
     catch(PDOException $e) {
       print "Error!: " . $e->getMessage() . "<br/>";
       die();
     }
-    
-    echo "Constructed a Database object";
+    //echo "Constructed a Database object";
+  }
+  
+  function getConnection(){
+    return $this->connection;
   }
   
   function query($query) {
     $data = array();
-    
     try {
      $result = $this->connection->query($query); 
      
